@@ -1,0 +1,14 @@
+body {
+  font: 20px Montserrat;
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.bg-1 {
+  background-color: #474e5d;
+  color: #ffffff;
+}
