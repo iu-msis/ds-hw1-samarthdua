@@ -1,0 +1,62 @@
+body {
+  padding-top: 60px;
+  font: 20px Montserrat;
+
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 12px;
+  padding-top:15px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+thead {
+  background-color: steelblue;
+  color: white;
+  font-weight: bold;
+}
+
+thead:hover {
+  color:white;
+}
+
+.form-group {
+  padding: 5px;
+}
+
+.buttonDiv {
+  padding: 20px;
+}
+
+.PT {
+  text-align: right;
+}
+
+.bg-1 {
+  background-color: #474e5d;
+  color: #ffffff;
+}
+
+.heading1 {
+  margin: 20px;
+}
+
+.bio-data {
+  padding:15px;
+}
+
+#emailLink{
+  color:black;
+
+}

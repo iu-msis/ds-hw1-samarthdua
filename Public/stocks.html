@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>About Moi</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+    <a class="navbar-brand" href="#">Kennethson Griffinstone</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="bio.html">Personal Bio</a></li>
+        <li class="nav-item"><a class="nav-link" href="stocks.html">Stocks I Follow</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1 class="heading1">Stocks of Interest</h1>
+  </header>
+
+
+
+  <div class="container-fluid text-center p-5">
+    <h4>These are some stocks that I think are interesting.</h4><br>
+    <table class="table-striped table-hover border" align = "center">
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Company Name</th>
+          <th class="PT">Price Target</th>
+          <th>Started Following</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>STLD</td>
+          <td>Steel Dynamics</td>
+          <td class="PT">$55.00</td>
+          <td>8/12/2007</td>
+        </tr>
+        <tr>
+          <td>HBI</td>
+          <td>Hanesbrands Inc.</td>
+          <td class="PT">$28.50</td>
+          <td>8/12/2012</td>
+        </tr>
+        <tr>
+          <td>GME</td>
+          <td>GameStop Corp.</td>
+          <td class="PT">$17.70</td>
+          <td>8/12/2013</td>
+        </tr>
+        <tr>
+          <td>BX</td>
+          <td>The Blackstone Group L.P.</td>
+          <td class="PT">$42.20</td>
+          <td>8/12/2007</td>
+        </tr>
+        <tr>
+          <td>AMAT</td>
+          <td>Applied Materials, Inc.</td>
+          <td class="PT">$74.10</td>
+          <td>8/12/2007</td>
+        </tr>
+        <tr>
+          <td>MSFT</td>
+          <td>Microsoft Corp.</td>
+          <td class="PT">$145.80</td>
+          <td>8/12/2007</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><h4>Have a recommendation? Submit it below!</h4>
+  </div>
+
+  <div class="container-fluid text-center p-5">
+    <form class="form-inline" action="#">
+      <div class="container">
+        <div class="form-group">
+          <label class="control-label col-sm-5" for="Ticker">Ticker:</label>
+          <input class="form-control col-sm-7" id = "Ticker">
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-5" for="CompanyName">Company Name:</label>
+          <input class="form-control col-sm-7" id = "CompanyName">
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-5" for="PT">Price Target:</label>
+          <input class="form-control col-sm-7" id = "PT">
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-5" for="tDate">Today's Date:</label>
+          <input class="form-control col-sm-7" id = "tDate">
+        </div>
+        <div class="text-center buttonDiv">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <footer class="container-fluid bg-1 text-center">
+    <p>
+      Styling by Griffinstone (TM)
+    </p>
+  </footer>
+
+  </body>
+</html>
