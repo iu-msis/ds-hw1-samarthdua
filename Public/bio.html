@@ -34,32 +34,34 @@
     <h1 class="heading1">Biography</h1>
   </header>
 
-  <div class="container-fluid text-center p-5">
+  <div id="user" class="container-fluid text-center p-5">
     <div class="row bio-data">
       <div class="col-5">Name:</div>
-      <div class="col-7">Kennethson Griffinstone</div>
+      <div class="col-7">{{profile.name}}</div>
     </div>
     <div class="row bio-data">
       <div class="col-5">Home Country:</div>
-      <div class="col-7">Florida's a country, right?</div>
+      <div class="col-7">{{profile.location}}</div>
     </div>
     <div class="row bio-data">
       <div class="col-5">Birthdate:</div>
-      <div class="col-7">October 15, 1968</div>
+      <div class="col-7">{{prettyDate(profile.birthdate)}}</div>
     </div>
     <div class="row bio-data">
       <div class="col-5">Age:</div>
-      <div class="col-7">49</div>
+      <div class="col-7">{{calculateAge(profile.birthdate)}}</div>
     </div>
     <div class="row bio-data">
       <div class="col-5">Email:</div>
-      <div class="col-7"><a href="mailto: KGrif@ThisIsAFake.com" id="emailLink">KGrif@ThisIsAFake.com</a></div>
+      <div class="col-7"><a v-bind:href="'mailto:' + profile.email" id="emailLink">{{profile.email}}</a></div>
     </div>
     <br><br><br>
     <div class="col-12 text-center">
       Here's a photo of my beautiful face.<br>
-      <img class="m-3 border img-responsive img-thumbnail"src="img/kenGrif.jpeg">
+      <img class="m-3 border img-responsive img-thumbnail"v-bind:src="profile.picture">
       <br>Don't I look radiant?<br><br>
+
+      
     </div>
 
   </div>
@@ -69,6 +71,8 @@
       Styling by Griffinstone (TM)
     </p>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/randomUser.js"></script>
   </body>
 </html>
