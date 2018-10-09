@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST') {
   exit;
 }
 
-//$comments = [];
+$comments = [];
 $comments = Comment::fetchAll();
 // 2. Convert to JSON
 $json = json_encode($comments, JSON_PRETTY_PRINT);
