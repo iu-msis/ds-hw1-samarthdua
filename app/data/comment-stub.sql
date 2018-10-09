@@ -15,7 +15,13 @@ insert into Comment(comment_id, comment_body)
   values (3, "How did you pick them?");
 
 insert into Comment(comment_id, comment_body)
-  values (4, "...some guy was talking about them on Barrons...");
+  values (4, "......");
 
 insert into Comment(comment_id, comment_body)
-  values (5, "-_-");
+  values (5, "What?");
+
+insert into Comment(comment_id, comment_body)
+  values (6, "......some guy was talking about them on Barrons");
+
+insert into Comment(comment_id, comment_body)
+  values (7, "-_- Goddamnit, Barry");
