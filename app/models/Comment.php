@@ -4,7 +4,7 @@ class Comment
   public $comment_id;
   public $comment_body;
   public function __construct($data) {
-    $this->comment_id = intval($data['comment_id']);
+    $this->comment_id = isset($row['comment_id']) ? intval($data['comment_id']);
     $this->comment_body = $data['comment_body'];
   }
   public function create() {
