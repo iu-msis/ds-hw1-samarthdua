@@ -1,5 +1,5 @@
 <?php
-class Team
+class Comment
 {
   public $comment_id;
   public $comment_body;

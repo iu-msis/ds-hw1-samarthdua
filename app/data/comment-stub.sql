@@ -9,13 +9,13 @@ insert into Comment(comment_id, comment_body)
   values (1, "Wow these are really interesting stocks");
 
 insert into Comment(comment_id, comment_body)
-  values (1, "I know they're the bees knees");
+  values (2, "I know they're the bees knees");
 
 insert into Comment(comment_id, comment_body)
-  values (1, "How did you pick them?");
+  values (3, "How did you pick them?");
 
 insert into Comment(comment_id, comment_body)
-  values (1, "...some guy was talking about them on Barrons...");
+  values (4, "...some guy was talking about them on Barrons...");
 
 insert into Comment(comment_id, comment_body)
-  values (1, "-_-");
+  values (5, "-_-");
