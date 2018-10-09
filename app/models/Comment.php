@@ -11,7 +11,7 @@ class Team
 
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
 
-    $sql = 'INSERT Comment (comment_id, comment_body)
+    $sql = 'INSERT into Comment (comment_id, comment_body)
                 VALUES (?, ?)';
 
     $statement = $db->prepare($sql);
