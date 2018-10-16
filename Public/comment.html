@@ -36,22 +36,26 @@
   </header>
 
   <div id="commentPage" class="container-fluid text-center pb-5">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <table id="commentTable" class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th>Comment ID</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody id="commentTableBody" v-for="c in commentArray"
+        :key="c.comment_id"
+        :id="'comment-' + c.comment_id">
+          <td>{{c.comment_id}}</td>
+          <td>{{c.comment_body}}</td>
+        </tbody>
+      </table>
+    </div>
+    <form @submit.prevent="handleCommentForm">
 
-    <table id="commentTable" class="table table-striped table-sm">
-      <thead>
-        <tr>
-          <th>Comment ID</th>
-          <th>Comment</th>
-        </tr>
-      </thead>
-      <tbody id="commentTableBody" v-for="c in commentArray"
-      :key="c.comment_id"
-      :id="'comment-' + c.comment_id">
-        <td>{{c.comment_id}}</td>
-        <td>{{c.comment_body}}</td>
-      </tbody>
-    </table>
-
+    </form>
 
   </div>
   <br><br>

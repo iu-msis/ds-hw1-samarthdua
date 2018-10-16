@@ -11,6 +11,27 @@ var commentApp = new Vue({
   computed: {},
   methods: {
 
+    handleCommentForm(e) {
+      const s = JSON.stringify(this.commentForm);
+      console.log(s);
+
+      fetch('api/comment.php', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json; charset=utf-8"
+        },
+        body: s
+      })
+
+      .then( response => response.json() )
+      .then( json => {this.commentArray.push(json)})
+      .catch( err => {
+        console.error('WORK POST ERROR:');
+        console.error(err);
+      })
+
+      this.commentForm = this.getEmptyCommentForm();
+    },
 
     fetchComments() {
       fetch('api/comment.php')
@@ -20,15 +41,16 @@ var commentApp = new Vue({
         console.log('COMMENT LIST ERROR:');
         console.log(err);
       })
+    },
+    getEmptyCommentForm() {
+      return {
+        comment_body = ''
+      }
     }
-    // getEmptyCommentForm() {
-    //   return {
-    //     comment_body = ''
-    //   }
-    // }
   },
   created() {
     this.fetchComments();
+    this.commentForm = this.getEmptyCommentForm();
   }
 
 
