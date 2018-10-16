@@ -17,13 +17,13 @@ var commentApp = new Vue({
       .then( response => response.json() )
       .then( json => {commentApp.commentArray = json} )
       .catch( err => {
-        console.log('TEAM LIST ERROR:');
+        console.log('COMMENT LIST ERROR:');
         console.log(err);
       })
     }
   },
   created() {
-    this.fetchProfile();
+    this.fetchComments();
   }
 
 
