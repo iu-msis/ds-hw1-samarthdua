@@ -44,7 +44,7 @@ var commentApp = new Vue({
     },
     getEmptyCommentForm() {
       return {
-        comment_body = ''
+        comment_body : ''
       }
     }
   },
