@@ -57,11 +57,12 @@
     </div>
     <form @submit.prevent="handleCommentForm">
       <div class="form-group row">
-        <label for="comment" class="col-sm-3 col-form-label">Comment: </label>
+        <label for="comment" class="col-sm-3 col-form-label">Add a comment: </label>
         <div class="col-sm-7">
-          <input type="date" id="comment" v-model="commentForm.comment_body" class="form-control" required>
+          <input type="text" id="comment" v-model="commentForm.comment_body" class="form-control" required>
         </div>
       </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
   </div>
