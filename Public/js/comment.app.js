@@ -20,12 +20,12 @@ var commentApp = new Vue({
         console.log('COMMENT LIST ERROR:');
         console.log(err);
       })
-    },
-    getEmptyCommentForm() {
-      return {
-        comment_body = ''
-      }
     }
+    // getEmptyCommentForm() {
+    //   return {
+    //     comment_body = ''
+    //   }
+    // }
   },
   created() {
     this.fetchComments();
